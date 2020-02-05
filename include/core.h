@@ -53,10 +53,10 @@ public:
 	unsigned int exchange(int index);
 
 	template<typename T> void stack_pointer(Core_mode mode, T value);
-    unsigned int stack_pointer(Core_mode mode);
+    void * stack_pointer(Core_mode mode);
 
 	template<typename T> void stack_pointer(T value);
-	unsigned int stack_pointer();
+	void * stack_pointer();
 
 	unsigned int private_base();
 

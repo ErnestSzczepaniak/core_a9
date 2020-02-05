@@ -73,15 +73,15 @@ unsigned int Core::exchange(int index)
 	return *(ptr + index);
 }
 
-extern "C" unsigned int c_sp_user_get();
-extern "C" unsigned int c_sp_fiq_get();
-extern "C" unsigned int c_sp_irq_get();
-extern "C" unsigned int c_sp_svc_get();
-extern "C" unsigned int c_sp_abort_get();
-extern "C" unsigned int c_sp_undefined_get();
-extern "C" unsigned int c_sp_system_get();
+extern "C" void * c_sp_user_get();
+extern "C" void * c_sp_fiq_get();
+extern "C" void * c_sp_irq_get();
+extern "C" void * c_sp_svc_get();
+extern "C" void * c_sp_abort_get();
+extern "C" void * c_sp_undefined_get();
+extern "C" void * c_sp_system_get();
 
-unsigned int Core::stack_pointer(Core_mode mode)
+void * Core::stack_pointer(Core_mode mode)
 {
 	switch (mode)
 	{
@@ -104,9 +104,9 @@ unsigned int Core::stack_pointer(Core_mode mode)
 	}
 }
 
-extern "C" unsigned int c_sp_get();
+extern "C" void * c_sp_get();
 
-unsigned int Core::stack_pointer()
+void * Core::stack_pointer()
 {
 	return c_sp_get();
 }
