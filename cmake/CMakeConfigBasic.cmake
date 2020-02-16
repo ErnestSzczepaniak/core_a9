@@ -17,7 +17,8 @@ set(name_library                core_a9)
 
 set(name_executable             executable.elf)
 
-set(dependency                  )
+set(dependency_common           )
+set(dependency_host             )
 set(dependency_scope            PRIVATE)
 
 # ---------------------------------------------| target |--------------------------------------------- #
