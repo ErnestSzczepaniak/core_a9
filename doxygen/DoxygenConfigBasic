@@ -1,0 +1,6 @@
+PROJECT_NAME            = doxytest
+
+INPUT                   =
+INCLUDE_PATH            = 
+
+@INCLUDE                = ../../designer/DoxygenConfigGeneric
