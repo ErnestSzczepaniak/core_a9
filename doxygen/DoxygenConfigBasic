@@ -1,4 +1,4 @@
-PROJECT_NAME            = doxytest
+PROJECT_NAME            = core_a9
 
 INPUT                   =
 INCLUDE_PATH            = 
