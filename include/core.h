@@ -69,7 +69,6 @@ public:
 	void isb();
 	void dmb();
 	void sev();
-
 };
 
 extern void * __vector_start;
