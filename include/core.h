@@ -70,6 +70,7 @@ public:
 	void dmb();
 	void sev();
 
+	void wakeup(int index);
 };
 
 extern void * __vector_start;

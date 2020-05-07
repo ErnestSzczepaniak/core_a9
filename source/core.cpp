@@ -173,3 +173,10 @@ void Core::sev()
 {
 	c_sev();
 }
+
+void Core::wakeup(int index)
+{
+	auto * memory = (unsigned int *) 0xffd05010;
+
+	if (index == 1) *memory &= ~0x2; // 2nd core
+}
