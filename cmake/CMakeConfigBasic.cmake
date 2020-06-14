@@ -37,13 +37,15 @@ set(family                      c5)
 
 set(board                       de10standard)
 
+set(memory                      ocram)
+
 set(sdram_start                 0x00000000)
 set(sdram_size                  1024M)
 set(sdram_size_stack            2M)
 set(sdram_size_pool             512M)
 
-set(ocram_start                 0xffff0000)
-set(ocram_size                  64K)
-set(ocram_size_stack            4K)
-set(ocram_size_pool             48K)
+set(ocram_start                 0xffe00000)
+set(ocram_size                  256K)
+set(ocram_size_stack            16K)
+set(ocram_size_pool             0)
 
