@@ -8,15 +8,8 @@
 
 #include "build.h"
 
-void test()
-{
-    int k = 2;
-}
-
 int main()
 {
-    test();
-
     while(1);
 }
 
